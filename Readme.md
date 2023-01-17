@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [сергей николаев](https://up.htmlacademy.ru/htmlcss/36/user/2267961).
-* Наставник: `Неизвестно`.
+- Студент: [сергей николаев](https://up.htmlacademy.ru/htmlcss/36/user/2267961).
+- Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199)
 
 ---
 
