@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  color: black;
+  background-color: #fffff;
+  font-size: 24px;
+  line-height: 28px;
+}
+.page-header {
+  color: black;
+  background-color: #fffff;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  background-color: #fffff;
+  text-decoration: none;
+}
+.navigation-link-link {
+  font-size: 16px;
+  line-height: 20px;
+  background: #756157;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 34px 8px 34px;
+}
+.main-index-section {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.logo {
+  padding: 51px 371px 82px 371px;
+}
+.main-index {
+  text-align: center;
+  color: black;
+  background-color: #fffff;
+}
+.main-index-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.main-index-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.navigation-search {
+  background-color: #756157;
+  color: black;
+}
+
+.navigation-search-link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffff;
+  background-color: #756157;
+}
+.subscribe {
+  background-image: url(../images/Subscribe.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe .button {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #82b3d3;
+  padding: 8px 50px 8px 50px;
+}
+.subscribe-input {
+  padding: 14px 345px 14px 20px;
+}
+.footer-contacts-phone {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
