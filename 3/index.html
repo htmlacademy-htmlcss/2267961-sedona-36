@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
     <base href="https://htmlacademy-htmlcss.github.io/2267961-sedona-36/3/">
 </head>
   <body>
@@ -20,7 +21,7 @@
             <a class="navigation-link" href="about.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="frg.html">О седоне</a>
+            <a class="navigation-link" href="frg.html">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -35,31 +36,36 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <span class="numbers">12</span>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Вход</a>
+              <a class="navigation-link-link" href="#">хочу сюда</a>
             </li>
           </ul>
         </section>
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Седона</h1>
-      <img
-        class="logo"
-        src="images/index-background.png"
-        alt="Логотип Седона"
-        width="1200"
-        height="485"
-      />
-      <ul class="main-index-title">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </ul>
-      <li class="main-index-description">
-        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-      </li>
+      <section class="main-index-section">
+        <h1 class="visually-hidden">Седона</h1>
+        <img
+          class="logo"
+          src="images/welcome.svg"
+          alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!"
+          width="458"
+          height="352"
+        />
+      </section>
+      <section class="main-index-hero">
+        <ul class="main-index-title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </ul>
+        <li class="main-index-description">
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </li>
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -121,21 +127,29 @@
         <h2 class="visually-hidden">Сервис</h2>
         <ul class="services-list">
           <li class="services-item">
-            <img class="services-logo" src="" alt="Домик" />
+            <img
+              class="services-logo"
+              src="./images/Advantage-icon.svg"
+              alt="Домик"
+            />
             <h3 class="services-title">Жильё</h3>
             <p class="services-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="services-item">
-            <img class="services-logo" src="" alt="Бургер" />
+            <img class="services-logo" src="./images/food.svg" alt="Бургер" />
             <h3 class="services-title">Еда</h3>
             <p class="services-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
-            <img class="services-logo" src="" alt="Коробка" />
+            <img
+              class="services-logo"
+              src="./images/Vector.svg"
+              alt="Коробка"
+            />
             <h3 class="services-title">Сувениры</h3>
             <p class="services-description">
               Не только китайского, но и настоящего местного производства!
@@ -166,6 +180,7 @@
           method="post"
         >
           <input
+            class="subscribe-input"
             type="email"
             name="subscribe-E-mail"
             placeholder="Ваш e-mail"
