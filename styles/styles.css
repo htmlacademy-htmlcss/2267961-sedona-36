@@ -115,9 +115,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin-top: 69px;
 }
 .main-index-description {
+  margin-bottom: 69px;
   font-size: 22px;
   line-height: 26px;
   list-style-type: none;
@@ -190,21 +191,29 @@ body {
 .services-item-food {
   background-color: white;
 }
+.search {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.search-wrapper {
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+}
 .search-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .search-description {
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
 }
-.navigation-search {
-  background-color: #756157;
-  color: black;
-}
 
 .navigation-search-link {
+  padding: 8px 50px;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
@@ -212,17 +221,25 @@ body {
   color: #ffff;
   background-color: #756157;
 }
+.subscribe-container {
+  width: 684px;
+  margin: 0 auto;
+}
 .subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
   background-image: url(../images/Subscribe.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .subscribe-title {
+  margin-top: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .subscribe-description {
+  margin-bottom: 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -235,7 +252,16 @@ body {
   padding: 8px 50px 8px 50px;
 }
 .subscribe-input {
-  padding: 14px 345px 14px 20px;
+  width: 452px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.subscribe-form {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+  padding-top: 54px;
 }
 /*Footer*/
 .footer-contacts-phone {
