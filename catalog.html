@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <header class="page-header">
+      <header class="page-header">
+        <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img
               class="logo-page-header"
@@ -20,39 +20,36 @@
               width="140"
               height="70"
           /></a>
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="about.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="frg.html">О седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link-link" href="#">Вход</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="frg.html">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link-link" href="#">Вход</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main class="main-inner">
         <header class="inner-header">
-          <img class="inner-header-logo" src="" alt="Картинка на заднем фоне" />
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrums">
             <li class="breadcrums-item">
@@ -70,113 +67,119 @@
             action="https://echo.htmlacademy.ru/"
             method="get"
           >
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="бассейн"
-                      checked
-                    />
-                    Бассейн
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="парковка"
-                      checked
-                    />
-                    Парковка
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi" />
-                    Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="product-group"
-                      checked
-                    />
-                    Гостиница
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="product-group"
-                    />
-                    Мотель
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="product-group"
-                    />
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, Р:</legend>
-              <input
-                class="catalog-filter-title-input"
-                type="number"
-                placeholder="от"
-                name="subscribe-data"
-              />
-              <input
-                class="catalog-filter-title-input"
-                type="number"
-                placeholder="до"
-                name="subscribe-data"
-              />
-              <div class="range">
+            <div class="catalog-filter-container">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="бассейн"
+                        checked
+                      />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="парковка"
+                        checked
+                      />
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="wi-fi"
+                      />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="product-group"
+                        checked
+                      />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="product-group"
+                      />
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="product-group"
+                      />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, Р:</legend>
                 <input
-                  class="range-input"
-                  type="range"
-                  min="1"
-                  max="100"
-                  value="50"
-                  class="slider"
-                  id="myRange"
+                  class="catalog-filter-title-input"
+                  type="number"
+                  placeholder="от"
+                  name="subscribe-data"
                 />
-              </div>
-            </fieldset>
-            <ul>
-              <li>
-                <button class="button" type="submit">Применить</button>
-              </li>
-              <li>
-                <button class="button" type="reset">Сбросить</button>
-              </li>
-            </ul>
+                <input
+                  class="catalog-filter-title-input"
+                  type="number"
+                  placeholder="до"
+                  name="subscribe-data"
+                />
+                <div class="range">
+                  <input
+                    class="range-input"
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="50"
+                    class="slider"
+                    id="myRange"
+                  />
+                </div>
+              </fieldset>
+              <ul class="catalog-filter-list">
+                <li>
+                  <button class="button" type="submit">Применить</button>
+                </li>
+                <li>
+                  <button class="button" type="reset">Сбросить</button>
+                </li>
+              </ul>
+            </div>
           </form>
         </section>
         <section class="sortig">
-          <div class="sortig-divication">
+          <div class="sortig-divication-container">
             <h2 class="sortig-divication-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Самые популярные</option>
@@ -269,18 +272,40 @@
           </div>
         </section>
         <section class="pagination">
-          <ul class="pagination-item">
-            <a href=""><li class="pagination-link" href="">1</li></a>
-            <a href=""> <li class="pagination-link" href="">2</li></a>
-            <a href=""> <li class="pagination-link" href="">3</li></a>
-            <a href=""> <li class="pagination-link" href="">4</li></a>
-            <a href=""> <li class="pagination-link" href="">5</li></a>
-            <a href=""> <li class="pagination-link" href="">6</li></a>
-            <a href=""> <li class="pagination-link" href="">7</li></a>
-            <a href=""> <li class="pagination-link" href="">8</li></a>
-            <a href=""> <li class="pagination-link" href="">9</li></a>
-            <a href=""> <li class="pagination-link" href="">10</li></a>
-          </ul>
+          <div class="pagination-container">
+            <ul class="pagination-item">
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">1</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">2</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">3</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">4</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">5</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">6</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">7</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">8</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">9</a>
+              </li>
+              <li class="pagination-list">
+                <a class="pagination-list-navigation" href="">10</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
