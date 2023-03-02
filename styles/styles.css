@@ -309,6 +309,24 @@ body {
   width: 47px;
   height: 40px;
 }
+.button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+  color: #83b3d3;
+  box-sizing: border-box;
+}
+.button-link:hover {
+  color: #68a2ca;
+}
+.button-link:focus {
+  color: #68a2ca;
+}
+.button-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
 .footer-social {
   width: 190px;
   margin-right: 42px;
@@ -319,4 +337,17 @@ body {
 }
 .footer-contacts {
   margin: 0 auto;
+}
+.footer-adress-text {
+  display: block;
+  color: #000000;
+}
+.footer-adress-text:hover {
+  color: #756157;
+}
+.footer-adress-text:focus {
+  color: #756157;
+}
+.footer-adress-text:active {
+  color: rgba(117, 97, 87, 0.3);
 }
