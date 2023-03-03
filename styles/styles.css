@@ -38,6 +38,7 @@ body {
   padding: 0;
 }
 .container {
+  font-family: "PT Sans", sans-serif;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -108,6 +109,19 @@ body {
   margin-right: 20px;
 }
 .navigation-item-button {
+}
+.navigation-link-favourites {
+  position: relative;
+}
+.numbers {
+  position: absolute;
+  display: inline-block;
+  background-color: #7db54f;
+  border-radius: 10px;
+  color: white;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /*Main*/
@@ -240,6 +254,7 @@ body {
   background-color: #756157;
 }
 .subscribe-container {
+  color: white;
   width: 684px;
   margin: 0 auto;
 }
@@ -262,6 +277,7 @@ body {
   line-height: 26px;
 }
 .subscribe .button {
+  border: none;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
@@ -289,6 +305,15 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
+}
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 .page-footer {
   height: 120px;
