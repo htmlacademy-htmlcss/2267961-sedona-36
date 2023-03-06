@@ -92,6 +92,16 @@ body {
   background-color: #fffff;
   text-decoration: none;
 }
+.active-link::before {
+  display: block;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  left: 16px;
+}
 /*Main*/
 .main-inner {
   background-repeat: no-repeat;
