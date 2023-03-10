@@ -120,6 +120,8 @@ body {
   left: 0;
   margin: auto;
 }
+.navigation-link-search {
+}
 .navigation-item-love {
   margin-right: 20px;
 }
@@ -140,7 +142,6 @@ body {
   font-size: 10px;
   text-align: center;
 }
-
 /*Main*/
 .main-index-section {
   background-image: url(../images/index-background.jpg);
@@ -175,15 +176,17 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding: 0;
-  margin-top: 69px;
+  margin-top: 64px;
   font-weight: 700;
+  margin-bottom: 26px;
 }
 .main-index-description {
   font-weight: 400;
-  margin-bottom: 69px;
+  margin-bottom: 88px;
   font-size: 22px;
   line-height: 26px;
   list-style-type: none;
+  margin-top: 26px;
 }
 .advantages-list {
   display: flex;
@@ -230,6 +233,7 @@ body {
   width: 230px;
 }
 .advantages-title {
+  font-size: 24px;
   position: relative;
   margin-top: 0;
   margin-bottom: 62px;
@@ -252,6 +256,20 @@ body {
 .advantages-item-tourist .advantages-title:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
+.main-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+.main-description {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 62px;
+  margin-top: 0;
+}
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -269,6 +287,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 29px;
 }
 .services-description {
   font-weight: 400;
@@ -289,6 +308,7 @@ body {
 }
 .search-wrapper {
   width: 592px;
+  height: 214px;
   margin: 0 auto;
   text-align: center;
 }
@@ -298,9 +318,10 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .search-description {
-  margin-bottom: 54px;
+  margin-bottom: 60px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -333,6 +354,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .subscribe-description {
   margin-bottom: 0;
@@ -348,15 +370,19 @@ body {
   text-transform: uppercase;
   color: white;
   background-color: #82b3d3;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 40px;
 }
 .subscribe-input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
   border-radius: 4px 0 0 4px;
   border: none;
   width: 452px;
   padding-left: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
+  color: black;
 }
 .subscribe-form {
   display: flex;
@@ -372,6 +398,7 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
+  margin-left: 28px;
 }
 .footer-contacts-phone:hover {
   color: #756157;
@@ -433,6 +460,7 @@ body {
 .footer-adress-text {
   display: block;
   color: #000000;
+  margin-top: 8px;
 }
 .footer-adress-text:hover {
   color: #756157;
