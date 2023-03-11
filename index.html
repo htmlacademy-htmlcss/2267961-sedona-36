@@ -399,7 +399,7 @@
           </a>
         </section>
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -412,10 +412,66 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label for="">Дата заезда:</label>
-            <input type="text" />
-            <label for="">Дата выезда:</label>
-            <input type="text" />
+            <div class="order">
+              <div class="order-time">
+                <label class="check-time" for="">Дата Заезда:</label>
+                <input
+                  class="check-time-text"
+                  type="text"
+                  id="appointment-date"
+                  name="appointment-date"
+                  value="27 апреля 2020"
+                  placeholder="Укажите дату"
+                />
+              </div>
+
+              <div class="order-date">
+                <label class="check-date" for="">Дата Выезда:</label>
+                <input
+                  class="check-date-text"
+                  type="text"
+                  id="appointment-time"
+                  name="appointment-time"
+                  value="1 сентября 2023"
+                  placeholder="Укажите дату"
+                />
+              </div>
+
+              <div class="adults">
+                <label class="order-adults" for="">Взрослые:</label>
+                <button class="adults-button-minus" type="button"></button>
+                <input
+                  class="field-human"
+                  type="text"
+                  id="appointment-phone"
+                  name="appointment-phone"
+                  placeholder=""
+                  value="2"
+                />
+                <button class="adults-button-plus" type="button"></button>
+                <label for="">Дети:</label>
+                <button class="info">
+                  <span class="visually-hidden"
+                    >Посмотреть дополнительную информацию</span
+                  >i<span class="content"
+                    >Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются
+                    бесплатно.</span
+                  >
+                </button>
+                <button class="children-button-minus" type="button"></button>
+                <input
+                  class="text-field-children"
+                  type="text"
+                  id="appointment-name"
+                  name="appointment-name"
+                  value="2"
+                />
+                <button class="children-button-plus" type="button"></button>
+              </div>
+
+              <button class="order-button" type="submit">Найти</button>
+            </div>
           </form>
         </div>
       </div>
