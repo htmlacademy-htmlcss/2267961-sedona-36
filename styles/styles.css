@@ -527,7 +527,6 @@ body {
   background-color: #e6e6e6;
 }
 .modal-title {
-  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -553,21 +552,33 @@ body {
   align-items: center;
   position: relative;
 }
-.check-time::before {
+.message-show .message {
+  display: inline-block;
+}
+.message {
   position: absolute;
-  content: "Мы не можем отправить вас в прошлое.";
-  left: 157px;
-  top: 52px;
-  color: #ff5757;
-  width: 320px;
+  display: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-transform: none;
+  padding-left: 20px;
+  bottom: -25px;
+  left: 0;
+  right: 0;
 }
-.check-time::after,
-.check-date::after {
+.error-date {
+  color: #ff5757;
+}
+
+.good-date {
+  color: #333333;
+}
+
+.input-box {
+  position: relative;
+}
+.input-box::after {
   background-image: url(../images/bag.svg);
   background-repeat: no-repeat;
   position: absolute;
@@ -575,7 +586,7 @@ body {
   width: 20px;
   height: 20px;
   top: 16px;
-  left: 538px;
+  right: 15px;
   opacity: 0.3;
 }
 .check-time-text {
@@ -590,6 +601,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  padding-left: 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
 }
 .order-date {
   display: flex;
@@ -605,17 +619,6 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
-.check-date::before {
-  position: absolute;
-  content: "На эти даты есть свободные номера. Пока есть.";
-  left: 157px;
-  top: 50px;
-  color: #333333;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  width: 371px;
-}
 .check-date-text {
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -627,13 +630,110 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  padding-left: 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
 }
-.adults {
+.people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
-.order-adults {
+.adults,
+.children {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.count-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.count-wrapper .button-minus,
+.count-wrapper .button-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #000000;
+  opacity: 0.3;
+}
+.count-wrapper .button-minus:hover,
+.count-wrapper .button-plus:hover,
+.count-wrapper .button-minus:focus,
+.count-wrapper .button-plus:focus {
+  opacity: 1;
+}
+.field-human {
+  border: 1px solid transparent;
+  width: 31px;
+  padding: 13px 5px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.order-adults,
+.order-children {
+  min-width: 137px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+.info {
+  position: relative;
+  background-color: #83b3d3;
+  border: none;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  width: 256px;
+  min-height: 152px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../images/three.svg);
+}
+.info:hover .content,
+.info:focus .content {
+  display: block;
 }
 .order-button {
   background-color: #83b3d3;
@@ -644,4 +744,14 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+.order-button:hover {
+  background-color: #68a2ca;
+}
+.order-button:focus {
+  background-color: #68a2ca;
+}
+.order-button:active {
+  background-color: #68a2ca;
+  opacity: 0.3;
 }
