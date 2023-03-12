@@ -509,13 +509,22 @@ body {
   height: 52px;
   background-color: #f2f2f2;
   border: none;
-  background-image: url(../images/cross.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   border-radius: 50%;
   margin-top: 64px;
   margin-right: 52px;
+}
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+.modal-close-button:active {
+  background-color: #e6e6e6;
 }
 .modal-title {
   font-family: "PT Sans Narrow", sans-serif;
@@ -542,6 +551,32 @@ body {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
+  position: relative;
+}
+.check-time::before {
+  position: absolute;
+  content: "Мы не можем отправить вас в прошлое.";
+  left: 157px;
+  top: 52px;
+  color: #ff5757;
+  width: 320px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: none;
+}
+.check-time::after,
+.check-date::after {
+  background-image: url(../images/bag.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 16px;
+  left: 538px;
+  opacity: 0.3;
 }
 .check-time-text {
   display: flex;
@@ -555,14 +590,13 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-image: url(../images/bag.svg);
-  background-repeat: no-repeat;
 }
 .order-date {
   display: flex;
   margin-bottom: 48px;
 }
 .check-date {
+  position: relative;
   display: flex;
   align-items: center;
   margin-right: 18px;
@@ -570,6 +604,17 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+.check-date::before {
+  position: absolute;
+  content: "На эти даты есть свободные номера. Пока есть.";
+  left: 157px;
+  top: 50px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 371px;
 }
 .check-date-text {
   background-color: #f2f2f2;
@@ -582,6 +627,21 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-image: url(../images/bag.svg);
-  background-repeat: no-repeat;
+}
+.adults {
+}
+.order-adults {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.order-button {
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
