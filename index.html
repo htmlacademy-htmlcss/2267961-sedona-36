@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
@@ -179,7 +185,7 @@
               <div class="services-item-container">
                 <img
                   class="services-logo"
-                  src="./images/Advantage-icon.svg"
+                  src="./images/advantage_icon.svg"
                   alt="Домик"
                   width="75"
                   height="72"
@@ -211,7 +217,7 @@
               <div class="services-item-container">
                 <img
                   class="services-logo"
-                  src="./images/Vector.svg"
+                  src="./images/vector.svg"
                   alt="Коробка"
                   width="75"
                   height="72"
@@ -427,12 +433,12 @@
           >
             <div class="order">
               <div class="order-time message-show">
-                <label class="check-time" for="">Дата Заезда:</label>
+                <label class="check-time" for="check-time">Дата Заезда:</label>
                 <div class="input-box">
                   <input
                     class="check-time-text"
                     type="text"
-                    id="appointment-date"
+                    id="check-time"
                     name="appointment-date"
                     value="27 апреля 2020"
                     placeholder="Укажите дату"
@@ -444,12 +450,12 @@
               </div>
 
               <div class="order-date message-show">
-                <label class="check-date" for="">Дата Выезда:</label>
+                <label class="check-date" for="check-date">Дата Выезда:</label>
                 <div class="input-box">
                   <input
                     class="check-date-text"
                     type="text"
-                    id="appointment-time"
+                    id="check-date"
                     name="appointment-time"
                     value="1 сентября 2023"
                     placeholder="Укажите дату"
@@ -510,7 +516,7 @@
                 <div class="children">
                   <label for="children" class="order-children"
                     >Дети:
-                    <button class="info">
+                    <span class="info" tabindex="0">
                       <span class="visually-hidden"
                         >Посмотреть дополнительную информацию</span
                       >
@@ -520,7 +526,7 @@
                         которых от 6 до 18 лет. Дети до 6 лет размещаются
                         бесплатно.</span
                       >
-                    </button>
+                    </span>
                   </label>
                   <div class="count-wrapper">
                     <button class="button-minus" type="button">

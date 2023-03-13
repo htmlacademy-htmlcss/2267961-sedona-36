@@ -184,6 +184,7 @@ body {
   line-height: 26px;
   list-style-type: none;
   margin-top: 26px;
+  color: #333333;
 }
 .advantages-list {
   display: flex;
@@ -252,6 +253,7 @@ body {
 .adantages-item-road .advantages-title:after,
 .advantages-item-tourist .advantages-title:after {
   background-color: rgba(0, 0, 0, 0.3);
+  color: #333333;
 }
 .main-title {
   font-weight: 700;
@@ -266,6 +268,7 @@ body {
   font-size: 22px;
   margin-bottom: 62px;
   margin-top: 0;
+  color: #333333;
 }
 .services-list {
   display: flex;
@@ -292,6 +295,7 @@ body {
   line-height: 21px;
   margin-top: 0;
   margin-bottom: 0;
+  color: #333333;
 }
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
@@ -321,6 +325,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   margin-top: 0;
+  color: #333333;
 }
 
 .navigation-search-link {
@@ -343,7 +348,7 @@ body {
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
-  background-image: url(../images/Subscribe.png);
+  background-image: url(../images/subscribe.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -487,9 +492,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 1000;
 }
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 .modal {
   position: relative;
   margin: auto;
@@ -602,7 +607,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
-  padding-right: 25px;
+  padding-right: 40px;
   box-sizing: border-box;
 }
 .order-date {
@@ -631,8 +636,14 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
-  padding-right: 25px;
+  padding-right: 40px;
   box-sizing: border-box;
+}
+.check-time-text,
+.check-date-text {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 24px;
 }
 .people {
   display: flex;
@@ -694,7 +705,12 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+.order-children {
+  padding-left: 5px;
+  box-sizing: border-box;
+}
 .info {
+  display: inline-block;
   position: relative;
   background-color: #83b3d3;
   border: none;
@@ -702,6 +718,8 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
+  text-align: center;
+  margin-left: 6px;
 }
 
 .content {
@@ -720,6 +738,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: left;
+  padding-left: 21px;
+  padding-top: 21px;
 }
 .content::before {
   content: "";
@@ -744,6 +765,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
 }
 .order-button:hover {
   background-color: #68a2ca;
