@@ -569,6 +569,7 @@ body {
 .modal-container-close {
   display: none;
 }
+
 .modal {
   position: relative;
   margin: auto;
@@ -609,6 +610,10 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
+}
+
+.modal-close-button:active svg {
+  opacity: 0.3;
 }
 
 .modal-title {
