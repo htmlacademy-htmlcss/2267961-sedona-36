@@ -130,7 +130,7 @@
             <li class="advantages-item advantages-item-square">
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Небольшая <br />площадь</h3>
-                <p class="advantages-description">
+                <p class="advantages-description ror">
                   Все достопримечательности находятся очень близко
                 </p>
               </div>
@@ -138,7 +138,7 @@
             <li class="advantages-item adantages-item-road">
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Красивая <br />дорога</h3>
-                <p class="advantages-description">
+                <p class="advantages-description ror">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </div>
@@ -148,7 +148,7 @@
             >
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Мало <br />туристов</h3>
-                <p class="advantages-description">
+                <p class="advantages-description ror">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </div>
@@ -181,15 +181,8 @@
         <div class="services">
           <h2 class="visually-hidden">Сервис</h2>
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item services-item-house">
               <div class="services-item-container">
-                <img
-                  class="services-logo"
-                  src="./images/advantage_icon.svg"
-                  alt="Домик"
-                  width="75"
-                  height="72"
-                />
                 <h3 class="services-title">Жильё</h3>
                 <p class="services-description">
                   Рекомендуем пожить <br />в настоящем мотеле, <br />всё как в
@@ -199,13 +192,6 @@
             </li>
             <li class="services-item services-item-food">
               <div class="services-item-container">
-                <img
-                  class="services-logo"
-                  src="./images/food.svg"
-                  alt="Бургер"
-                  width="75"
-                  height="72"
-                />
                 <h3 class="services-title">Еда</h3>
                 <p class="services-description">
                   Всегда заказывайте <br />топовый фирменный бургер, <br />вы не
@@ -213,15 +199,8 @@
                 </p>
               </div>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-box">
               <div class="services-item-container">
-                <img
-                  class="services-logo"
-                  src="./images/vector.svg"
-                  alt="Коробка"
-                  width="75"
-                  height="72"
-                />
                 <h3 class="services-title">Сувениры</h3>
                 <p class="services-description">
                   Не только китайского, <br />но и настоящего местного
@@ -261,6 +240,7 @@
               type="email"
               name="subscribe-E-mail"
               placeholder="Ваш e-mail"
+              required
             />
             <button class="button" type="submit">Подписаться</button>
           </form>
@@ -346,7 +326,10 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <g clip-path="url(#clip0_65834_383)">
-                <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
+                <path
+                  d="M0 13.2564V15.8564H2.5V13.2564H0Z"
+                  fill="currentColor"
+                />
                 <path
                   d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"
                   fill="currentColor"
@@ -403,12 +386,13 @@
                 </clipPath>
               </defs>
             </svg>
+            <span class="visually-hidden">html academy</span>
           </a>
         </section>
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg
               width="21"
